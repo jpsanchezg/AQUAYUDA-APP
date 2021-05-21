@@ -12,10 +12,10 @@ const config = {
 const theme = {
     background: '#f5f8fb',
     fontFamily: 'Helvetica Neue',
-    headerBgColor: '#EF6C00',
+    headerBgColor: '#00AAE4',
     headerFontColor: '#fff',
     headerFontSize: '15px',
-    botBubbleColor: '#EF6C00',
+    botBubbleColor: '#00AAE4',
     botFontColor: '#fff',
     userBubbleColor: '#fff',
     userFontColor: '#4a4a4a',
@@ -76,8 +76,8 @@ class SimpleForm extends Component {
                         {
                             id: 'submit',
                             options: [
-                                { value: 's && S', label: 'Si', trigger: 'end-message' },
-                                { value: 'n && N', label: 'No', trigger: 'no-submit' },
+                                { value: 's', label: 'Si', trigger: 'end-message' },
+                                { value: 'n', label: 'No', trigger: 'no-submit' },
                             ]
                         },
                         {
