@@ -86,8 +86,20 @@ class SimpleForm extends Component {
                                     return'Por favor ingresa un email valido.';
                                   }
                              },
-                            trigger: 'q-report'
+                            trigger: 'q-pregreport'
                         },
+                        {
+                          id: 'q-pregreport',
+                          message: 'Vas ha hacer un reporte?',
+                          trigger: 'pregereport',
+                      },
+                      {
+                        id: 'pregereport',
+                        options: [
+                            { value: 's', label: 'Si', trigger: 'report' },
+                            { value: 'n', label: 'No', trigger: 'q-submit' },
+                        ]
+                    },
                         {
                             id: 'q-report',
                             message: 'Cual es tu reporte?',
