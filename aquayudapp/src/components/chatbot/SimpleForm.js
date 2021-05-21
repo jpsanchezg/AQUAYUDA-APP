@@ -36,6 +36,16 @@ class SimpleForm extends Component {
                         {
                             id: 'firstname',
                             user: true,
+                            validator: (value) => {
+                                if (/^[A-Za-z][A-Za-z\'\-]+([\ A-Za-z][A-Za-z\'\-]+)*/.test(value))
+                                  {
+                                    return true;
+                                  }
+                                else
+                                  {
+                                    return'Por favor ingresa un nombre valido.';
+                                  }
+                             },
                             trigger: 'q-lastname'
                         },
                         {
@@ -46,6 +56,16 @@ class SimpleForm extends Component {
                         {
                             id: 'lastname',
                             user: true,
+                            validator: (value) => {
+                                if (/^[A-Za-z][A-Za-z\'\-]+([\ A-Za-z][A-Za-z\'\-]+)*/.test(value))
+                                  {
+                                    return true;
+                                  }
+                                else
+                                  {
+                                    return'Por favor ingresa un apellido valido.';
+                                  }
+                             },
                             trigger: 'q-email'
                         },
                         {
@@ -56,6 +76,16 @@ class SimpleForm extends Component {
                         {
                             id: 'email',
                             user: true,
+                            validator: (value) => {
+                                if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value))
+                                  {
+                                    return true;
+                                  }
+                                else
+                                  {
+                                    return'Por favor ingresa un email valido.';
+                                  }
+                             },
                             trigger: 'q-report'
                         },
                         {
@@ -66,6 +96,16 @@ class SimpleForm extends Component {
                         {
                             id: 'report',
                             user: true,
+                            validator: (value) => {
+                                if (/^[A-Za-z][A-Za-z\'\-]+([\ A-Za-z][A-Za-z\'\-]+)*/.test(value))
+                                  {
+                                    return true;
+                                  }
+                                else
+                                  {
+                                    return'Por favor ingresa un reporte valido.';
+                                  }
+                             },
                             trigger: 'q-submit'
                         },
                         {
