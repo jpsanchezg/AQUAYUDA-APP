@@ -34,10 +34,10 @@ const Textarea = styled(Input).attrs({as: "textarea"})`
 const SubmitButton = tw(PrimaryButtonBase)`inline-block mt-8`
 
 export default ({
-  subheading = "Contact Us",
-  heading = <>Feel free to <span tw="text-primary-500">get in touch</span><wbr/> with us.</>,
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  submitButtonText = "Send",
+  subheading = "Reportes",
+  heading = <>Puedes reportar <span tw="text-primary-500">Todo lo que quieras</span><wbr/> Siempre te vamos a escuchar.</>,
+  description = "Tu reporte va a ser resuelto depende de la prioridad que le pongas y veamos tambien, ese tiempo es entre 1 hora a un dia.",
+  submitButtonText = "Enviar",
   formAction = "#",
   formMethod = "get",
   textOnLeft = true,
@@ -56,10 +56,12 @@ export default ({
             <Heading>{heading}</Heading>
             {description && <Description>{description}</Description>}
             <Form action={formAction} method={formMethod}>
-              <Input type="email" name="email" placeholder="Your Email Address" />
-              <Input type="text" name="name" placeholder="Full Name" />
-              <Input type="text" name="subject" placeholder="Subject" />
-              <Textarea name="message" placeholder="Your Message Here" />
+              <Input type="email" name="email" placeholder="Tu direccion de correo" />
+              <Input type="text" name="name" placeholder="Nombre completo" />
+              <Input type="text" name="finca" placeholder="Nombre de la finca" />
+              <Input type="text" name="vereda" placeholder="Nombre de la vereda" />
+              <Input type="number" name="prioridad" placeholder="Prioridad del 1 al 5, 1 muy bajo y 5 muy alta" />
+              <Textarea name="reporte" placeholder="Pon tu reporte aca" />
               <SubmitButton type="submit">{submitButtonText}</SubmitButton>
             </Form>
           </TextContent>

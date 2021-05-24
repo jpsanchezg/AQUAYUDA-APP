@@ -5,7 +5,7 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import illustration from "images/signup-illustration.svg";
-import logo from "images/logo.svg";
+import logo from "images/logo.png";
 import googleIconImageSrc from "images/google-icon.png";
 import twitterIconImageSrc from "images/twitter-icon.png";
 import { ReactComponent as SignUpIcon } from "feather-icons/dist/icons/user-plus.svg";
@@ -54,22 +54,22 @@ const IllustrationImage = styled.div`
 `;
 
 export default ({
-  logoLinkUrl = "#",
+  logoLinkUrl = "../../MainLandingPage.js",
   illustrationImageSrc = illustration,
-  headingText = "Sign Up For Treact",
+  headingText = "Registrarse a Aquayuda",
   socialButtons = [
     {
       iconImageSrc: googleIconImageSrc,
-      text: "Sign Up With Google",
+      text: "Registrate con tu Google",
       url: "https://google.com"
     },
     {
       iconImageSrc: twitterIconImageSrc,
-      text: "Sign Up With Twitter",
+      text: "Registrate con tu Twitter",
       url: "https://twitter.com"
     }
   ],
-  submitButtonText = "Sign Up",
+  submitButtonText = "Registrarse",
   SubmitButtonIcon = SignUpIcon,
   tosUrl = "#",
   privacyPolicyUrl = "#",
@@ -96,30 +96,30 @@ export default ({
                 ))}
               </SocialButtonsContainer>
               <DividerTextContainer>
-                <DividerText>Or Sign up with your e-mail</DividerText>
+                <DividerText>O registrate con tu correo </DividerText>
               </DividerTextContainer>
               <Form>
                 <Input type="email" placeholder="Email" />
-                <Input type="password" placeholder="Password" />
+                <Input type="password" placeholder="Contraseña" />
                 <SubmitButton type="submit">
                   <SubmitButtonIcon className="icon" />
                   <span className="text">{submitButtonText}</span>
                 </SubmitButton>
                 <p tw="mt-6 text-xs text-gray-600 text-center">
-                  I agree to abide by treact's{" "}
+                Acepto cumplir con los {" "}
                   <a href={tosUrl} tw="border-b border-gray-500 border-dotted">
-                    Terms of Service
+                  Términos de servicio
                   </a>{" "}
-                  and its{" "}
+                  y su{" "}
                   <a href={privacyPolicyUrl} tw="border-b border-gray-500 border-dotted">
-                    Privacy Policy
+                  Política de privacidad de aquayuda.
                   </a>
                 </p>
 
                 <p tw="mt-8 text-sm text-gray-600 text-center">
-                  Already have an account?{" "}
+                  Ya tienes una cuenta?{" "}
                   <a href={signInUrl} tw="border-b border-gray-500 border-dotted">
-                    Sign In
+                    Iniciar sesion
                   </a>
                 </p>
               </Form>

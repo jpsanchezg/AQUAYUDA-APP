@@ -10,6 +10,9 @@ import { SectionHeading } from "components/misc/Headings";
 import { PrimaryButton } from "components/misc/Buttons";
 
 import imag from "images/aqueducto.jpg";
+import imag2 from "images/asamblea.jpg";
+import imag3 from "images/notificacion.jpg";
+import imag4 from "images/mantenimiento.jpg";
 
 const HeadingRow = tw.div`flex`;
 const Heading = tw(SectionHeading)`text-gray-900`;
@@ -62,29 +65,20 @@ export default ({
         
       featured: true
     },
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost()
+    getPlaceholderPost1(),
+    getPlaceholderPost2(),
+    getPlaceholderPost3(),
+    /*getPlaceholderPost4(),
+    getPlaceholderPost5(),
+    getPlaceholderPost6(),
+    getPlaceholderPost7(),
+    getPlaceholderPost8(),
+    getPlaceholderPost9(),*/
   ]
 }) => {
   const [visible, setVisible] = useState(7);
   const onLoadMoreClick = () => {
-    setVisible(v => v + 6);
+    setVisible(v => v + 3);
   };
   return (
     <AnimationRevealPage>
@@ -121,13 +115,91 @@ export default ({
   );
 };
 
-const getPlaceholderPost = () => ({
+const getPlaceholderPost1 = () => ({
+  imageSrc:imag2,
+  category: "Asambleas ",
+  date: "Junio 2, 2021",
+  title: "Asamblea general",
+  description:
+    "En la asamblea se hablara de temas acerca del acueducto y su mantenimiento, se va a hablar tambien de los cortes de agua programados para este mes.",
+  url: "https://reddit.com"
+});
+const getPlaceholderPost2 = () => ({
+  imageSrc:imag3,
+  category: "Corte de agua ",
+  date: "Mayo 29, 2021",
+  title: "Corte De agua en san rafael",
+  description:
+    "El corte de agua va a estar por 3 horas en san rafael.",
+  url: "https://reddit.com"
+});
+const getPlaceholderPost3 = () => ({
+  imageSrc:imag4,
+  category: "Mantenimientos",
+  date: "Junio 20, 2021",
+  title: "Mantenimiento de 4 horas del acueducto",
+  description:"El mantenimiento se va a quitar el agua a nivel general para hacer limpieza de toda la infraestructura",
+  url: "https://reddit.com"
+});
+const getPlaceholderPost4 = () => ({
   imageSrc:
     "https://images.unsplash.com/photo-1418854982207-12f710b74003?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
-  category: "Travel Guide",
+  category: "Asambleas ",
   date: "April 19, 2020",
   title: "Visit the beautiful Alps in Switzerland",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   url: "https://reddit.com"
 });
+const getPlaceholderPost5 = () => ({
+  imageSrc:
+    "https://images.unsplash.com/photo-1418854982207-12f710b74003?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
+  category: "Asambleas ",
+  date: "April 19, 2020",
+  title: "Visit the beautiful Alps in Switzerland",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  url: "https://reddit.com"
+});
+const getPlaceholderPost6 = () => ({
+  imageSrc:
+    "https://images.unsplash.com/photo-1418854982207-12f710b74003?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
+  category: "Asambleas ",
+  date: "April 19, 2020",
+  title: "Visit the beautiful Alps in Switzerland",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  url: "https://reddit.com"
+});
+const getPlaceholderPost7 = () => ({
+  imageSrc:
+    "https://images.unsplash.com/photo-1418854982207-12f710b74003?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
+  category: "Asambleas ",
+  date: "April 19, 2020",
+  title: "Visit the beautiful Alps in Switzerland",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  url: "https://reddit.com"
+});
+const getPlaceholderPost8 = () => ({
+  imageSrc:
+    "https://images.unsplash.com/photo-1418854982207-12f710b74003?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
+  category: "Asambleas ",
+  date: "April 19, 2020",
+  title: "Visit the beautiful Alps in Switzerland",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  url: "https://reddit.com"
+});
+const getPlaceholderPost9 = () => ({
+  imageSrc:
+    "https://images.unsplash.com/photo-1418854982207-12f710b74003?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
+  category: "Asambleas ",
+  date: "April 19, 2020",
+  title: "Visit the beautiful Alps in Switzerland",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  url: "https://reddit.com"
+});
+
+

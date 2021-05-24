@@ -59,12 +59,12 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
   const defaultLinks = [
     <NavLinks key={1}>
       <NavLink href="MainLandingPage.js">Noticias</NavLink>
-      <NavLink href="login">Reportes</NavLink>
+      <NavLink href="/components/innerPages/ContactUsPage">Reportes</NavLink>
       <NavLink href="/#">Chat</NavLink>
-      <NavLink href="Login.js" tw="lg:ml-12!">
+      <NavLink href="/components/innerPages/LoginPage" tw="lg:ml-12!">
         Iniciar secion
       </NavLink>
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="pages/abautUs.js">Registrarse</PrimaryLink>
+      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="/components/innerPages/SignupPage">Registrarse</PrimaryLink>
     </NavLinks>
   ];
 
