@@ -45,7 +45,7 @@ const defaultQuickReplies = [
 
 export default () => {
   // 消息列表
-  const { messages, appendMsg, setTyping } = useMessages(initialMessages,initialMessages2);
+  const { messages, appendMsg, setTyping } = useMessages(initialMessages, initialMessages2);
 
   // 发送回调
   function handleSend(type, val) {
@@ -91,19 +91,19 @@ export default () => {
     }
   }
 
-return (
-  <AnimationRevealPage>
-    <Header />
-    <Chat
-      navbar={{ title: 'Asistente' }}
-      messages={messages}
-      renderMessageContent={renderMessageContent}
-      quickReplies={defaultQuickReplies}
-      onQuickReplyClick={handleQuickReplyClick}
-      onSend={handleSend}
-    />
+  return (
+    <AnimationRevealPage>
+      <Header />
+      <Chat
+        navbar={{ title: 'Asistente' }}
+        messages={messages}
+        renderMessageContent={renderMessageContent}
+        quickReplies={defaultQuickReplies}
+        onQuickReplyClick={handleQuickReplyClick}
+        onSend={handleSend}
+      />
 
-    <Footer />
-  </AnimationRevealPage>
-);
+      <Footer />
+    </AnimationRevealPage>
+  );
 };
