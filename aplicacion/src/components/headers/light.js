@@ -60,7 +60,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
     <NavLinks key={1}>
       <NavLink href="MainLandingPage.js">Noticias</NavLink>
       <NavLink href="/components/innerPages/ContactUsPage">Reportes</NavLink>
-      <NavLink href="/#">Chat</NavLink>
+      <NavLink href="/components/innerPages/PricingPage">Chat</NavLink>
       <NavLink href="/components/innerPages/LoginPage" tw="lg:ml-12!">
         Iniciar secion
       </NavLink>
